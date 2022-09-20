@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB64",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "stopOnEntry": true,
+            "preLaunchTask": "LINK"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB64_BUILD",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "LINK"
+        },
+    ]
+}
